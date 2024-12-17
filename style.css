@@ -97,6 +97,10 @@ h1 {
     }
 }
 @media (max-width: 600px) {
+    h1 {
+        font-size: 1.8rem; /* Kleinere Schriftgröße für Mobilgeräte */
+        margin-bottom: 10px; /* Weniger Abstand nach unten */
+    }
     .keyboard {
         margin-top: 10px;
         flex-direction: row; /* Reihenweise Darstellung */
