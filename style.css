@@ -73,6 +73,10 @@ h1 {
 .key:hover {
     background-color: #555;
 }
+/* Spezielle Regel für den Haken */
+.key:contains("✔") {
+    color: white; /* Setzt die Farbe des Hakens auf weiß */
+}
 
 /* Nachricht */
 .message {
