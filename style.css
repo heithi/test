@@ -102,7 +102,7 @@ h1 {
         flex-direction: row; /* Reihenweise Darstellung */
         flex-wrap: wrap; /* Zeilenumbruch erlauben */
         justify-content: center;
-        gap: 3px; /* Abstand zwischen Zeilen */
+        gap: 1px; /* Abstand zwischen Zeilen */
     }
 
     .row {
