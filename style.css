@@ -1,0 +1,98 @@
+/* Grundlayout */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 10px; /* Padding hinzufügen für Mobilgeräte */
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2.5rem; /* Größere Schriftgröße für Desktop */
+}
+
+/* Grid für die Buchstaben-Eingabe */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr) 20px repeat(4, 1fr); /* Flexibles Layout */
+    grid-gap: 5px;
+    margin-bottom: 20px;
+}
+
+.cell {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #444;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem; /* Größere Schriftgröße für Desktop */
+    text-transform: uppercase;
+    background-color: #222;
+    color: white;
+}
+
+/* Klassen für Feedback */
+.correct { background-color: #6aaa64; } /* Grün */
+.present { background-color: #c9b458; } /* Gelb */
+.absent { background-color: #3a3a3c; }  /* Grau */
+
+/* Tastatur */
+.keyboard {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.row {
+    display: flex;
+    justify-content: center;
+    margin: 5px 0;
+}
+
+.key {
+    width: 50px;
+    height: 60px;
+    margin: 2px;
+    text-align: center;
+    line-height: 40px;
+    background-color: #444;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+    font-size: 1.5rem; /* Kleinere Schriftgröße für Mobilgeräte */
+}
+
+.key:hover {
+    background-color: #555;
+}
+
+/* Nachricht */
+.message {
+    margin-top: 20px;
+    font-size: 1.5rem; /* Kleinere Schriftgröße für Mobilgeräte */
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/* Responsive Styles für das Grid */
+@media (max-width: 600px) {
+    .grid {
+        grid-template-columns: repeat(6, 1fr) 10px repeat(4, 1fr); /* Kleinere Lücke */
+        grid-gap: 3px; /* Weniger Abstand zwischen den Zellen */
+    }
+
+    .cell {
+        width: 30px; /* Kleinere Zellen */
+        height: 30px;
+        font-size: 1.2rem; /* Kleinere Schriftgröße */
+    }
+}
