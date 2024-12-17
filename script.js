@@ -25,7 +25,7 @@ const keyboard = document.getElementById('keyboard');
 const rowsKeys = [
     "QWERTZUIOP",  // Erste Zeile
     "ASDFGHJKL",   // Zweite Zeile
-    "✔YXCVBNM←"    // Dritte Zeile mit Haken, Y und Löschen
+    "✓YXCVBNM←"    // Dritte Zeile mit Haken, Y und Löschen
 ];
 
 rowsKeys.forEach(row => {
@@ -46,7 +46,7 @@ function handleKeyPress(letter) {
 
     if (letter === "←") {
         removeLetter();
-    } else if (letter === "✔") {
+    } else if (letter === "✓") {
         checkWords();
     } else {
         // Überprüfe, ob eine Zelle bearbeitbar ist
