@@ -96,3 +96,26 @@ h1 {
         font-size: 1.2rem; /* Kleinere Schriftgröße */
     }
 }
+@media (max-width: 600px) {
+    .keyboard {
+        margin-top: 10px;
+        flex-direction: row; /* Reihenweise Darstellung */
+        flex-wrap: wrap; /* Zeilenumbruch erlauben */
+        justify-content: center;
+        gap: 3px; /* Abstand zwischen Zeilen */
+    }
+
+    .row {
+        flex: 1 1 100%; /* Jede Zeile nimmt die volle Breite */
+        justify-content: space-around; /* Gleichmäßiger Abstand zwischen Tasten */
+        margin: 0; /* Abstand reduzieren */
+    }
+
+    .key {
+        width: 30px; /* Kleinere Tasten */
+        height: 40px;
+        font-size: 1rem; /* Kleinere Schriftgröße */
+        margin: 1px; /* Weniger Abstand zwischen Tasten */
+    }
+}
+
