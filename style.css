@@ -105,25 +105,26 @@ h1 {
         font-size: 1.8rem; /* Kleinere Schriftgröße für Mobilgeräte */
         margin-bottom: 10px; /* Weniger Abstand nach unten */
     }
+
     .keyboard {
         margin-top: 10px;
-        flex-direction: row; /* Reihenweise Darstellung */
-        flex-wrap: wrap; /* Zeilenumbruch erlauben */
-        justify-content: center;
-        gap: 1px; /* Abstand zwischen Zeilen */
+        flex-direction: column; /* Reihenweise Darstellung */
+        align-items: center; /* Zentriere die gesamte Tastatur */
+        gap: 2px; /* Weniger Abstand zwischen den Zeilen */
     }
 
     .row {
-        flex: 1 1 100%; /* Jede Zeile nimmt die volle Breite */
-        justify-content: space-around; /* Gleichmäßiger Abstand zwischen Tasten */
-        margin: 0; /* Abstand reduzieren */
+        flex: 0 1 auto; /* Jede Zeile passt sich der Breite an */
+        justify-content: center; /* Tasten zentriert anordnen */
+        gap: 2px; /* Weniger Abstand zwischen den Tasten */
+        margin: 0; /* Entferne zusätzliche Abstände */
     }
 
     .key {
-        width: 30px; /* Kleinere Tasten */
+        width: 35px; /* Etwas größere Tasten für bessere Bedienung */
         height: 40px;
-        font-size: 1rem; /* Kleinere Schriftgröße */
-        margin: 1px; /* Weniger Abstand zwischen Tasten */
+        font-size: 1rem; /* Schriftgröße anpassen */
+        margin: 0; /* Kein zusätzlicher Abstand zwischen den Tasten */
     }
 }
 
